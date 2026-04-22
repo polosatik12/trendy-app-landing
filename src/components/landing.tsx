@@ -55,8 +55,6 @@ export function Hero() {
           <div id="download" className="mt-8 flex flex-wrap gap-3">
             <StoreButton icon={<Apple className="size-5" />} label="App Store" />
             <StoreButton icon={<Play className="size-5" />} label="Google Play" />
-            <StoreButton icon={<Sparkles className="size-5" />} label="RuStore" />
-            <StoreButton icon={<Monitor className="size-5" />} label="Для компьютера" />
           </div>
         </div>
 
@@ -222,7 +220,6 @@ export function CTA() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <StoreButton icon={<Apple className="size-5" />} label="App Store" />
           <StoreButton icon={<Play className="size-5" />} label="Google Play" />
-          <StoreButton icon={<Sparkles className="size-5" />} label="RuStore" />
         </div>
       </div>
     </section>
