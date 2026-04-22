@@ -22,7 +22,7 @@ import {
   Check,
   X,
 } from "lucide-react";
-import phoneHero from "@/assets/phone-hero.png";
+
 
 export function Navbar() {
   return (
