@@ -57,7 +57,7 @@ export function Hero() {
         className="absolute inset-0 -z-10 blur-3xl"
         style={{ background: "var(--gradient-brand)", opacity: 0.15 }}
       />
-      <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-6xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
           <span className="size-1.5 rounded-full bg-primary" />
           Российская суперапп-платформа нового поколения
@@ -74,18 +74,18 @@ export function Hero() {
           <br />
           мессенджер
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+        <p className="mt-6 max-w-xl text-lg text-muted-foreground">
           Общение, маркетплейс с AI-поиском, недвижимость и страхование — в одном приложении.
           Без переключений между десятком сервисов.
         </p>
 
-        <div id="download" className="mt-8 flex flex-wrap justify-center gap-3">
+        <div id="download" className="mt-8 flex flex-wrap gap-3">
           <StoreButton icon={<Apple className="size-5" />} label="App Store" />
           <StoreButton icon={<Play className="size-5" />} label="Google Play" />
           <StoreButton icon={<Download className="size-5" />} label="APK для Android" />
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-muted-foreground">
+        <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
           <span>Без подписок</span>
           <span>Без рекламы в чатах</span>
           <span>Серверы в России</span>
