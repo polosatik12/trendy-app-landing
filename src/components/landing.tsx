@@ -1,17 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { Apple, Play, Monitor, Sparkles, ShieldCheck, PhoneCall, MessageCircle, Zap } from "lucide-react";
+void Sparkles;
 import phoneHero from "@/assets/phone-hero.png";
 
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 mx-auto w-[min(1100px,calc(100%-2rem))]">
       <nav className="flex items-center justify-between rounded-full border border-border bg-surface/70 px-4 py-3 backdrop-blur-xl md:px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="grid size-9 place-items-center rounded-full" style={{ background: "var(--gradient-brand)" }}>
-            <Sparkles className="size-4 text-white" />
-          </div>
-          <span className="text-lg font-semibold tracking-tight">Nova</span>
-        </Link>
+        <Link to="/" className="flex items-center gap-2" aria-label="На главную" />
+
         <div className="hidden items-center gap-7 text-sm text-muted-foreground md:flex">
           <a href="#features" className="transition hover:text-foreground">Возможности</a>
           <a href="#download" className="transition hover:text-foreground">Скачать</a>
@@ -68,7 +65,7 @@ export function Hero() {
           />
           <img
             src={phoneHero}
-            alt="Превью мобильного приложения Nova"
+            alt="Превью мобильного приложения"
             width={1024}
             height={1024}
             className="mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(120,80,255,0.35)]"
@@ -165,7 +162,7 @@ export function Showcase() {
             в рост вашего бизнеса
           </h2>
           <p className="mt-5 max-w-md text-muted-foreground">
-            Боты, каналы, оплаты и встроенная аналитика. Развивайте сообщество клиентов прямо внутри Nova.
+            Боты, каналы, оплаты и встроенная аналитика. Развивайте сообщество клиентов прямо внутри приложения.
           </p>
           <div className="mt-8 flex gap-3">
             <a
@@ -191,7 +188,7 @@ export function Showcase() {
           />
           <img
             src={phoneHero}
-            alt="Бизнес-функции Nova"
+            alt="Бизнес-функции приложения"
             width={1024}
             height={1024}
             loading="lazy"
@@ -208,7 +205,7 @@ export function CTA() {
     <section className="px-6 py-24">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
-          Скачайте Nova
+          Скачайте приложение
           <br />
           <span
             className="bg-clip-text text-transparent"
@@ -235,10 +232,6 @@ export function Footer() {
     <footer className="border-t border-border px-6 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
         <div className="flex items-center gap-2">
-          <div className="grid size-7 place-items-center rounded-full" style={{ background: "var(--gradient-brand)" }}>
-            <Sparkles className="size-3.5 text-white" />
-          </div>
-          <span className="font-semibold text-foreground">Nova</span>
           <span>© 2026</span>
         </div>
         <div className="flex gap-6">

@@ -4,13 +4,13 @@ import { Navbar, Hero, Features, Showcase, CTA, Footer } from "@/components/land
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nova — максимум возможностей для общения" },
+      { title: "Максимум возможностей для общения" },
       {
         name: "description",
         content:
-          "Nova — быстрое и лёгкое мобильное приложение для общения, звонков и бизнеса. Скачайте бесплатно на iOS, Android и компьютер.",
+          "Быстрое и лёгкое мобильное приложение для общения, звонков и бизнеса. Скачайте бесплатно на iOS, Android и компьютер.",
       },
-      { property: "og:title", content: "Nova — максимум возможностей для общения" },
+      { property: "og:title", content: "Максимум возможностей для общения" },
       {
         property: "og:description",
         content: "Быстрый мессенджер для общения, звонков и бизнеса. Бесплатно на всех устройствах.",
