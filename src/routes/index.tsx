@@ -4,16 +4,16 @@ import { Navbar, Hero, Features, Showcase, CTA, Footer } from "@/components/land
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Максимум возможностей для общения" },
+      { title: "Wave — максимум возможностей для общения" },
       {
         name: "description",
         content:
-          "Быстрое и лёгкое мобильное приложение для общения, звонков и бизнеса. Скачайте бесплатно на iOS, Android и компьютер.",
+          "Wave — быстрое и лёгкое мобильное приложение для общения, звонков и бизнеса. Скачайте бесплатно на iOS, Android и компьютер.",
       },
-      { property: "og:title", content: "Максимум возможностей для общения" },
+      { property: "og:title", content: "Wave — максимум возможностей для общения" },
       {
         property: "og:description",
-        content: "Быстрый мессенджер для общения, звонков и бизнеса. Бесплатно на всех устройствах.",
+        content: "Wave — быстрый мессенджер для общения, звонков и бизнеса. Бесплатно на всех устройствах.",
       },
     ],
   }),
