@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Apple, Play, Monitor, Sparkles, ShieldCheck, PhoneCall, MessageCircle, Zap } from "lucide-react";
+void Sparkles;
 import phoneHero from "@/assets/phone-hero.png";
 
 export function Navbar() {
