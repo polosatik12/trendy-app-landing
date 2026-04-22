@@ -65,7 +65,7 @@ export function Hero() {
           />
           <img
             src={phoneHero}
-            alt="Превью мобильного приложения Nova"
+            alt="Превью мобильного приложения"
             width={1024}
             height={1024}
             className="mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(120,80,255,0.35)]"
@@ -162,7 +162,7 @@ export function Showcase() {
             в рост вашего бизнеса
           </h2>
           <p className="mt-5 max-w-md text-muted-foreground">
-            Боты, каналы, оплаты и встроенная аналитика. Развивайте сообщество клиентов прямо внутри Nova.
+            Боты, каналы, оплаты и встроенная аналитика. Развивайте сообщество клиентов прямо внутри приложения.
           </p>
           <div className="mt-8 flex gap-3">
             <a
@@ -188,7 +188,7 @@ export function Showcase() {
           />
           <img
             src={phoneHero}
-            alt="Бизнес-функции Nova"
+            alt="Бизнес-функции приложения"
             width={1024}
             height={1024}
             loading="lazy"
@@ -205,7 +205,7 @@ export function CTA() {
     <section className="px-6 py-24">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
-          Скачайте Nova
+          Скачайте приложение
           <br />
           <span
             className="bg-clip-text text-transparent"
