@@ -52,55 +52,43 @@ export function Navbar() {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pt-16 pb-24 md:pt-24 md:pb-32">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-        <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
-            <span className="size-1.5 rounded-full bg-primary" />
-            Российская суперапп-платформа нового поколения
-          </div>
-          <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-            <span
-              className="bg-clip-text text-transparent"
-              style={{ backgroundImage: "var(--gradient-hero)" }}
-            >
-              WAVE
-            </span>
-            <br />
-            больше чем
-            <br />
-            мессенджер
-          </h1>
-          <p className="mt-6 max-w-md text-lg text-muted-foreground">
-            Общение, маркетплейс с AI-поиском, недвижимость и страхование — в одном приложении.
-            Без переключений между десятком сервисов.
-          </p>
+    <section className="relative overflow-hidden px-6 pt-24 pb-24 md:pt-36 md:pb-32">
+      <div
+        className="absolute inset-0 -z-10 blur-3xl"
+        style={{ background: "var(--gradient-brand)", opacity: 0.15 }}
+      />
+      <div className="mx-auto max-w-3xl text-center">
+        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
+          <span className="size-1.5 rounded-full bg-primary" />
+          Российская суперапп-платформа нового поколения
+        </div>
+        <h1 className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: "var(--gradient-hero)" }}
+          >
+            WAVE
+          </span>
+          <br />
+          больше чем
+          <br />
+          мессенджер
+        </h1>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+          Общение, маркетплейс с AI-поиском, недвижимость и страхование — в одном приложении.
+          Без переключений между десятком сервисов.
+        </p>
 
-          <div id="download" className="mt-8 flex flex-wrap gap-3">
-            <StoreButton icon={<Apple className="size-5" />} label="App Store" />
-            <StoreButton icon={<Play className="size-5" />} label="Google Play" />
-            <StoreButton icon={<Download className="size-5" />} label="APK для Android" />
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-muted-foreground">
-            <span>Без подписок</span>
-            <span>Без рекламы в чатах</span>
-            <span>Серверы в России</span>
-          </div>
+        <div id="download" className="mt-8 flex flex-wrap justify-center gap-3">
+          <StoreButton icon={<Apple className="size-5" />} label="App Store" />
+          <StoreButton icon={<Play className="size-5" />} label="Google Play" />
+          <StoreButton icon={<Download className="size-5" />} label="APK для Android" />
         </div>
 
-        <div className="relative">
-          <div
-            className="absolute inset-0 -z-10 blur-3xl"
-            style={{ background: "var(--gradient-brand)", opacity: 0.35 }}
-          />
-          <img
-            src={phoneHero}
-            alt="Превью мобильного приложения WAVE"
-            width={1024}
-            height={1024}
-            className="mx-auto w-full max-w-md drop-shadow-[0_30px_60px_rgba(120,80,255,0.35)]"
-          />
+        <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-muted-foreground">
+          <span>Без подписок</span>
+          <span>Без рекламы в чатах</span>
+          <span>Серверы в России</span>
         </div>
       </div>
     </section>
