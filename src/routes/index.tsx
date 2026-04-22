@@ -1,19 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Navbar, Hero, Features, Showcase, CTA, Footer } from "@/components/landing";
+import {
+  Navbar,
+  Hero,
+  Features,
+  Compare,
+  AISection,
+  TechStack,
+  Security,
+  FAQ,
+  CTA,
+  Footer,
+} from "@/components/landing";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Wave — максимум возможностей для общения" },
+      { title: "WAVE — суперапп для общения, покупок и сервисов" },
       {
         name: "description",
         content:
-          "Wave — быстрое и лёгкое мобильное приложение для общения, звонков и бизнеса. Скачайте бесплатно на iOS, Android и компьютер.",
+          "WAVE — российская суперапп-платформа: мессенджер, маркетплейс с AI-поиском, недвижимость и страхование в одном приложении. Бесплатно на iOS и Android.",
       },
-      { property: "og:title", content: "Wave — максимум возможностей для общения" },
+      { property: "og:title", content: "WAVE — суперапп для общения, покупок и сервисов" },
       {
         property: "og:description",
-        content: "Wave — быстрый мессенджер для общения, звонков и бизнеса. Бесплатно на всех устройствах.",
+        content:
+          "Мессенджер, маркетплейс с AI, недвижимость и страхование в одном приложении. Без подписок и рекламы в чатах.",
       },
     ],
   }),
@@ -29,7 +41,11 @@ function Index() {
       <main>
         <Hero />
         <Features />
-        <Showcase />
+        <Compare />
+        <AISection />
+        <TechStack />
+        <Security />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
