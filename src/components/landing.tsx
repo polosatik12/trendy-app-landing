@@ -348,39 +348,38 @@ export function Compare() {
         </div>
 
         <Reveal>
-          <div className="mt-10 overflow-x-auto rounded-3xl border border-border bg-surface">
-            <div className="min-w-[540px]">
-              <div className="grid grid-cols-4 border-b border-border bg-surface-elevated/50 text-sm font-medium">
-                <div className="p-4">Функция</div>
-                <div className="p-4 text-center">WAVE</div>
-                <div className="p-4 text-center text-muted-foreground">Мессенджеры</div>
-                <div className="p-4 text-center text-muted-foreground">Маркетплейсы</div>
-              </div>
-              {[
-                ["Чаты и звонки HD", true, true, false],
-                ["Маркетплейс с AI-поиском", true, false, true],
-                ["Недвижимость и ипотека", true, false, false],
-                ["Страхование онлайн", true, false, false],
-                ["Лента, Stories и Reels", true, false, false],
-                ["AI-ассистент", true, false, false],
-              ].map((row, i) => (
-                <div
-                  key={i as number}
-                  className="grid grid-cols-4 border-b border-border text-sm last:border-0"
-                >
-                  <div className="p-4">{row[0] as string}</div>
-                  <div className="grid place-items-center p-4">
-                    {row[1] ? <Check className="size-5 text-primary" /> : <X className="size-5 text-muted-foreground/50" />}
-                  </div>
-                  <div className="grid place-items-center p-4">
-                    {row[2] ? <Check className="size-5 text-muted-foreground" /> : <X className="size-5 text-muted-foreground/50" />}
-                  </div>
-                  <div className="grid place-items-center p-4">
-                    {row[3] ? <Check className="size-5 text-muted-foreground" /> : <X className="size-5 text-muted-foreground/50" />}
-                  </div>
-                </div>
-              ))}
+          <div className="mt-10 rounded-3xl border border-border bg-surface">
+            {/* Header */}
+            <div className="grid grid-cols-[1.4fr_1fr_1fr_1fr] sm:grid-cols-4 border-b border-border bg-surface-elevated/50 text-xs sm:text-sm font-medium">
+              <div className="p-3 sm:p-4">Функция</div>
+              <div className="p-3 sm:p-4 text-center">WAVE</div>
+              <div className="p-3 sm:p-4 text-center text-muted-foreground">Мессен&shy;джеры</div>
+              <div className="p-3 sm:p-4 text-center text-muted-foreground">Маркет&shy;плейсы</div>
             </div>
+            {[
+              ["Чаты и звонки HD", true, true, false],
+              ["Маркетплейс с AI-поиском", true, false, true],
+              ["Недвижимость и ипотека", true, false, false],
+              ["Страхование онлайн", true, false, false],
+              ["Лента, Stories и Reels", true, false, false],
+              ["AI-ассистент", true, false, false],
+            ].map((row, i) => (
+              <div
+                key={i as number}
+                className="grid grid-cols-[1.4fr_1fr_1fr_1fr] sm:grid-cols-4 border-b border-border text-xs sm:text-sm last:border-0"
+              >
+                <div className="p-3 sm:p-4 leading-snug">{row[0] as string}</div>
+                <div className="grid place-items-center p-3 sm:p-4">
+                  {row[1] ? <Check className="size-4 sm:size-5 text-primary" /> : <X className="size-4 sm:size-5 text-muted-foreground/50" />}
+                </div>
+                <div className="grid place-items-center p-3 sm:p-4">
+                  {row[2] ? <Check className="size-4 sm:size-5 text-muted-foreground" /> : <X className="size-4 sm:size-5 text-muted-foreground/50" />}
+                </div>
+                <div className="grid place-items-center p-3 sm:p-4">
+                  {row[3] ? <Check className="size-4 sm:size-5 text-muted-foreground" /> : <X className="size-4 sm:size-5 text-muted-foreground/50" />}
+                </div>
+              </div>
+            ))}
           </div>
         </Reveal>
       </div>
