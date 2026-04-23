@@ -314,6 +314,7 @@ const comparisons = [
   {
     title: "WAVE против Instagram и TikTok",
     text: "Соцсети дают только контент. WAVE объединяет развлекательную ленту Reels и Stories с реальными сервисами: покупки, страхование, недвижимость.",
+    note: "Компания Meta Platforms Inc. признана в России экстремистской организацией и запрещена. Принадлежащие ей соцсети Facebook и Instagram в России запрещены.",
   },
   {
     title: "WAVE против госсервисов и банковских приложений",
@@ -345,6 +346,11 @@ export function Compare() {
               >
                 <h3 className="text-xl font-semibold">{c.title}</h3>
                 <p className="mt-3 text-muted-foreground">{c.text}</p>
+                {"note" in c && c.note ? (
+                  <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground/70">
+                    {c.note}
+                  </p>
+                ) : null}
               </article>
             </Reveal>
           ))}
