@@ -700,8 +700,9 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground md:flex-row">
         <span>© 2026 WAVE. Все права защищены.</span>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           <a href="/privacy" className="transition hover:text-foreground">Конфиденциальность</a>
+          <a href="/data-policy" className="transition hover:text-foreground">Положение об обработке ПДн</a>
           <a href="#" className="transition hover:text-foreground">Условия</a>
         </div>
       </div>
