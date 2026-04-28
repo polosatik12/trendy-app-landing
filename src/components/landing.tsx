@@ -359,8 +359,6 @@ export function Compare() {
             {[
               ["Чаты и звонки HD", true, true, false],
               ["Маркетплейс с AI-поиском", true, false, true],
-              ["Недвижимость и ипотека", true, false, false],
-              ["Страхование онлайн", true, false, false],
               ["Лента, Stories и Reels", true, false, false],
               ["AI-ассистент", true, false, false],
             ].map((row, i) => (
