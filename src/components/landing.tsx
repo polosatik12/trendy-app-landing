@@ -359,7 +359,7 @@ export function Compare() {
             {[
               ["Чаты и звонки HD", true, true, false],
               ["Маркетплейс с AI-поиском", true, false, true],
-              ["Лента, Stories и Reels", true, false, false],
+              ["Лента, Истории и Сюжеты", true, false, false],
               ["AI-ассистент", true, false, false],
             ].map((row, i) => (
               <div
