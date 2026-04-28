@@ -563,7 +563,7 @@ const faqs = [
   },
   {
     q: "На каких технологиях построено приложение?",
-    a: "Мобильные клиенты на Flutter, веб на React и TypeScript, бэкенд на Lovable Cloud (PostgreSQL и Supabase), AI на Google Gemini и OpenAI GPT.",
+    a: "Мобильные клиенты на Flutter, веб на TypeScript, надёжный облачный бэкенд и современные нейросети для AI-функций.",
   },
 ];
 
