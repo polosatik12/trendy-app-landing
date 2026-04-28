@@ -420,7 +420,7 @@ export function AISection() {
               Нейросети <span className="text-muted-foreground">встроены в ключевые сценарии</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Мы используем Google Gemini и OpenAI GPT через AI Gateway, чтобы поиск, ассистенты и
+              Мы используем современные нейросети, чтобы поиск, ассистенты и
               модерация работали быстрее и точнее.
             </p>
           </div>
