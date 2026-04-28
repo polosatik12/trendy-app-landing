@@ -266,7 +266,7 @@ export function Features() {
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
             <Reveal key={f.title} className={`delay-[${i * 75}ms]`}>
               <article
