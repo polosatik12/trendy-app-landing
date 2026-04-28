@@ -599,6 +599,11 @@ export function FAQ() {
             </Reveal>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-xs text-muted-foreground/70">
+          Компания Meta Platforms Inc. признана в России экстремистской организацией и запрещена.
+          Принадлежащие ей соцсети Фейсбук и Инстаграм в России запрещены.
+        </p>
       </div>
     </section>
   );
