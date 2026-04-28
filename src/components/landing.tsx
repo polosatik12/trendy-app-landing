@@ -453,9 +453,6 @@ export function AISection() {
 
 const techStack = [
   { icon: Code2, title: "Flutter", text: "Нативная производительность 60–120 FPS на iOS и Android из единой кодовой базы." },
-  { icon: Code2, title: "React + TypeScript", text: "Веб-версия в любом браузере без установки и синхронизация со смартфоном." },
-  
-  { icon: Bot, title: "AI Gateway", text: "Google Gemini и OpenAI GPT для поиска, ассистентов и автоматической модерации." },
   { icon: PhoneCall, title: "Шифрование звонков", text: "HD видео и аудио с минимальной задержкой, поддержка звонков на обычные телефоны." },
   { icon: Server, title: "Серверы в России", text: "Соответствие 152-ФЗ, минимальный пинг и стабильность при любой нагрузке." },
 ];
