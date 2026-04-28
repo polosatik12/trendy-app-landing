@@ -15,6 +15,7 @@ import {
   Image as ImageIcon,
   Search,
   Bot,
+  Hexagon,
   Lock,
   Server,
   Code2,
@@ -454,6 +455,7 @@ export function AISection() {
 const techStack = [
   { icon: Code2, title: "Flutter", text: "Нативная производительность 60–120 FPS на iOS и Android из единой кодовой базы." },
   { icon: PhoneCall, title: "Шифрование звонков", text: "HD видео и аудио с минимальной задержкой, поддержка звонков на обычные телефоны." },
+  { icon: Hexagon, title: "Node.js", text: "Высокопроизводительный бэкенд на Node.js с асинхронной обработкой запросов." },
   { icon: Server, title: "Серверы в России", text: "Соответствие 152-ФЗ, минимальный пинг и стабильность при любой нагрузке." },
 ];
 
